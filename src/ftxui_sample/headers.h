@@ -19,8 +19,8 @@
 #pragma warning(disable : 6386 6385 4005 26481 4459)
 #endif
 // clang-format off
-#include <GLFW/glfw3.h>
-#include <GLFW/glfw3native.h>
+//#include <GLFW/glfw3.h>
+//#include <GLFW/glfw3native.h>
 #include <cassert>
 #include <algorithm>
 #include <array>
@@ -33,14 +33,14 @@
 #include <execution>
 #include <format>
 #include <fstream>
-#include <glm/glm.hpp>
-#include <glm/gtc/constants.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/quaternion.hpp>
-#include <glm/gtc/random.hpp>
-#include <glm/gtx/norm.hpp>
-#include <glm/gtx/quaternion.hpp>
-#include <glm/gtx/string_cast.hpp>
+//#include <glm/glm.hpp>
+//#include <glm/gtc/constants.hpp>
+//#include <glm/gtc/matrix_transform.hpp>
+//#include <glm/gtc/quaternion.hpp>
+//#include <glm/gtc/random.hpp>
+//#include <glm/gtx/norm.hpp>
+//#include <glm/gtx/quaternion.hpp>
+//#include <glm/gtx/string_cast.hpp>
 #include <iomanip>
 #include <iostream>
 #include <iterator>
