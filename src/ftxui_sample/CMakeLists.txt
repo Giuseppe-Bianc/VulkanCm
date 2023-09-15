@@ -1,4 +1,11 @@
-add_executable(intro main.cpp)
+
+set(SOURCE main.cpp 
+           headers.h
+           casts.h
+           Timer.h)
+
+add_executable(intro ${SOURCE}
+)
 
 target_link_libraries(
   intro
@@ -8,7 +15,6 @@ target_link_libraries(
 target_link_system_libraries(
   intro
   PRIVATE
-          CLI11::CLI11
           fmt::fmt
           spdlog::spdlog
           lefticus::tools)
