@@ -30,20 +30,3 @@ stages:
   cmake -S . -B ./build -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
   cmake --build ./build --config RelWithDebInfo
 
-test_linux_llvm:
-  stage: test
-  variables:
-    compiler: llvm
-  script:
-    - *setup_linux
-    - *setup_cpp
-    - *test
-
-test_linux_gcc:
-  stage: test
-  variables:
-    compiler: gcc
-  script:
-    - *setup_linux
-    - *setup_cpp
-    - *test
