@@ -31,7 +31,11 @@
 #include <cstring>
 #include <ctime>
 #include <execution>
-#include <format>
+#ifdef _WIN32 // Check if the target platform is Windows
+  #ifdef _MSC_VER // Check if the compiler is MSVC
+    #include <format>
+  #endif
+#endif
 #include <fstream>
 //#include <glm/glm.hpp>
 //#include <glm/gtc/constants.hpp>
